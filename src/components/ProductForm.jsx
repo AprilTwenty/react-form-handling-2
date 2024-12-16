@@ -1,16 +1,12 @@
 import { useState } from "react";
 
-
-
 function ProductForm() {
   const [name, setName] = useState('');
   const [image, setImage] = useState('');
   const [price, setPrice] = useState('');
   const [description, setDescription] = useState('');
 
-
   function handleSubmit(event) {
-
     event.preventDefault();
     const data = {
       name: name,
@@ -18,9 +14,7 @@ function ProductForm() {
       price: price,
       description: description
     };
-        
-    
-        alert(JSON.stringify(data, null, 10));
+      alert(JSON.stringify(data, null, 10));
   }
 
   return (
