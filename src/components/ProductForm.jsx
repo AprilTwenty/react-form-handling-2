@@ -19,8 +19,8 @@ function ProductForm() {
       description: description
     };
         
-        const messageAlert = `name: ${name}\nprice: ${price}\nimage: ${image}\ndescription: ${description}`;
-        alert(messageAlert);
+    
+        alert(JSON.stringify(data, null, 10));
   }
 
   return (
